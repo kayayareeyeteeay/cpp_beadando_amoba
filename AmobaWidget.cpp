@@ -13,8 +13,8 @@ void AmobaWidget::draw() {
     else if (ny == 2) gout << text("Sarga nyert!");
     else if (ny == 3) gout << text("Dontetlen!");
     else {
-        if (_jm->get_jelenlegi_jatekos() == 1) gout << text("Piros (1) kovetkezik.");
-        else gout << text("Sarga (2) kovetkezik.");
+        if (_jm->get_jelenlegi_jatekos() == 1) gout << text("Piros (1) kovetkezik.")<<move_to(_x,_y -15)<<color(255,0,0)<<box(20,20);
+        else gout << text("Sarga (2) kovetkezik.")<<move_to(_x,_y -15)<<color(255,255,50)<<box(20,20);
     }
 
 

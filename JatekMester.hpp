@@ -1,9 +1,10 @@
 #ifndef JATEKMESTER_HPP
 #define JATEKMESTER_HPP
-
+const int OSZLOP = 7;
+const int SOR = 6;
 class JatekMester {
 private:
-    int _tabla[7][6];
+    int _tabla[OSZLOP][SOR];
     int _jelenlegi_jatekos; 
     int _nyertes;
     int _nyero_hossz;
